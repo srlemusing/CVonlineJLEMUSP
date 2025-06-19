@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding-top: 56px; /* Para que el contenido no quede debajo del navbar fijo */
+}
+
+/* Estilos para la sección Hero (Inicio) */
+.hero {
+    background: linear-gradient(rgba(12, 45, 123, 0.5), rgba(22, 22, 22, 0.5)), url('../img/fondo_hero.jpg') no-repeat center center/cover;
+    /* Asegúrate de tener una imagen en img/fondo_hero.jpg o cambia el background */
+    color: white;
+}
+
+
+/* con esta propiedad se resuelve el problema que al abrir por primera vez la pagina tocaba hacer scroll para central la informacion. 
+Esta propiedad CSS le dice al navegador que cualquier contenido que se "desborde" fuera del ancho visible del elemento (en este caso, html y body), 
+debe ser ocultado horizontalmente. Esto es muy común cuando se utilizan animaciones de entrada laterales (como fade-right o fade-left de AOS), 
+ya que los elementos se dibujan inicialmente fuera de la pantalla y luego se mueven a su posición. Sin overflow-x: hidden;, 
+el navegador podría crear una barra de desplazamiento horizontal para mostrar ese contenido "extra".*/
+html, body {
+    overflow-x: hidden; /* <--- ESTA ES LA LÍNEA MÁGICA */
+}   
+
+h1#profesion1 {
+    font-size: 24px;
+    color: lightblue;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 60px 0; /* Espaciado interno para cada sección */
+    overflow: hidden; /* Importante para que las animaciones de AOS no causen barras de scroll */
+}
+
+/* Ajustes para los enlaces de navegación al hacer scroll */
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff !important; /* Color de tu preferencia para el elemento activo */
+}
+
+/* Estilos para la imagen de perfil */
+.hero img {
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para los títulos de las secciones */
+h2 {
+    color: #007bff; /* Un color de acento para los títulos */
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Ajustes para el texto justificado en algunas secciones */
+.text-justify {
+    text-align: justify;
+}
+
+/* Estilos para las tarjetas de información */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #007bff;
+}
+
+.card-subtitle {
+    font-size: 0.9em;
+}
+
+/* Estilos para los iconos de contacto */
+.list-unstyled li i {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+/* Estilos específicos para la sección Habilidades */
+#habilidades .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#habilidades .progress {
+    height: 1.2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+#habilidades .progress-bar {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+/* INICIO - CAMBIO AÑADIDO: Estilos para dinamismo */
+
+/* Efecto de zoom en botones */
+.action-button {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.action-button:active { /* Efecto al hacer clic */
+    transform: scale(0.95); /* Ligeramente más pequeño */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.action-button:hover { /* Efecto al pasar el ratón */
+    transform: scale(1.02); /* Ligeramente más grande */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Cambio de color en enlaces de contacto */
+.contact-link a {
+    color: #333; /* Color original del texto */
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link a:hover {
+    color: #007bff; /* Color de acento al pasar el ratón */
+    text-decoration: none; /* Quita el subrayado al pasar el ratón */
+}
+
+
+/* FIN - CAMBIO AÑADIDO: Estilos para dinamismo */

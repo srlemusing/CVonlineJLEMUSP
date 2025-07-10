@@ -146,4 +146,101 @@ h2::after {
 }
 
 
+/* --- Diseños específicos para el logo de las empresas e institutos --- */
+.bit-logo {
+    height: 24px;             /* Ajusta la altura del logo. Puedes cambiar este valor (ej. 20px, 25px) */
+    width: auto;              /* Mantiene la proporción original de la imagen */
+    vertical-align: middle;   /* Alinea el centro del logo con la línea media del texto */
+    margin-right: 7px;        /* Espacio entre el logo y el texto del nombre del instituto */
+    /* Si el logo tiene un fondo y quieres que se vea mejor en la card, puedes añadir: */
+    /* background-color: #fff; */ /* Fondo blanco si el logo lo necesita y es transparente */
+    /* padding: 2px; */           /* Pequeño relleno alrededor del logo */
+    /* border-radius: 3px; */     /* Bordes ligeramente redondeados */
+}
+
+/* Puedes añadir ajustes específicos para pantallas más pequeñas si lo ves necesario */
+@media (max-width: 768px) {
+    .bit-logo {
+        height: 18px; /* Un poco más pequeño en móviles, por ejemplo */
+        margin-right: 5px;
+    }
+}
+
+.bancolombia-logo {
+    height: 24px;             /* Ajusta la altura del logo. Puedes cambiar este valor (ej. 20px, 25px) */
+    width: auto;              /* Mantiene la proporción original de la imagen */
+    vertical-align: middle;   /* Alinea el centro del logo con la línea media del texto */
+    margin-right: 7px;        /* Espacio entre el logo y el texto del nombre del instituto */
+    /* Si el logo tiene un fondo y quieres que se vea mejor en la card, puedes añadir: */
+    /* background-color: #fff; */ /* Fondo blanco si el logo lo necesita y es transparente */
+    /* padding: 2px; */           /* Pequeño relleno alrededor del logo */
+    /* border-radius: 3px; */     /* Bordes ligeramente redondeados */
+}
+
+/* Puedes añadir ajustes específicos para pantallas más pequeñas si lo ves necesario */
+@media (max-width: 768px) {
+    .bancolombia-logo {
+        height: 18px; /* Un poco más pequeño en móviles, por ejemplo */
+        margin-right: 5px;
+    }
+}
+
+.bancow-logo {
+    height: 28px;             /* Ajusta la altura del logo. Puedes cambiar este valor (ej. 20px, 25px) */
+    width: auto;              /* Mantiene la proporción original de la imagen */
+    vertical-align: middle;   /* Alinea el centro del logo con la línea media del texto */
+    margin-right: 7px;        /* Espacio entre el logo y el texto del nombre del instituto */
+    /* Si el logo tiene un fondo y quieres que se vea mejor en la card, puedes añadir: */
+    /* background-color: #fff; */ /* Fondo blanco si el logo lo necesita y es transparente */
+    /* padding: 2px; */           /* Pequeño relleno alrededor del logo */
+    /* border-radius: 3px; */     /* Bordes ligeramente redondeados */
+}
+
+/* Puedes añadir ajustes específicos para pantallas más pequeñas si lo ves necesario */
+@media (max-width: 768px) {
+    .bancow-logo {
+        height: 18px; /* Un poco más pequeño en móviles, por ejemplo */
+        margin-right: 5px;
+    }
+}
+
+/* --- Diseño específico para los logos en la sección de Formación (dentro de h5) --- */
+.fucla-logo {
+    height: 28px;            /* Altura del logo. Ajusta según el tamaño de tu h5. Puede ser 25px, 30px, etc. */
+    width: auto;             /* Mantiene la proporción */
+    vertical-align: middle;  /* Alinea el centro del logo con el texto */
+    margin-right: 10px;      /* Espacio a la derecha del logo */
+    /* Consideraciones adicionales si el logo tiene fondo transparente o necesita realce */
+    /* background-color: #fff; */
+    /* padding: 3px; */
+    /* border-radius: 5px; */
+}
+
+/* Puedes añadir ajustes específicos para pantallas más pequeñas si lo ves necesario */
+@media (max-width: 768px) {
+    .fucla-logo {
+        height: 22px; /* Un poco más pequeño en móviles, por ejemplo */
+        margin-right: 8px;
+    }
+}
+
+.upb-logo {
+    height: 28px;            /* Altura del logo. Ajusta según el tamaño de tu h5. Puede ser 25px, 30px, etc. */
+    width: auto;             /* Mantiene la proporción */
+    vertical-align: middle;  /* Alinea el centro del logo con el texto */
+    margin-right: 10px;      /* Espacio a la derecha del logo */
+    /* Consideraciones adicionales si el logo tiene fondo transparente o necesita realce */
+    /* background-color: #fff; */
+    /* padding: 3px; */
+    /* border-radius: 5px; */
+}
+
+/* Puedes añadir ajustes específicos para pantallas más pequeñas si lo ves necesario */
+@media (max-width: 768px) {
+    .upb-logo {
+        height: 22px; /* Un poco más pequeño en móviles, por ejemplo */
+        margin-right: 8px;
+    }
+}
+
 /* FIN - CAMBIO AÑADIDO: Estilos para dinamismo */
